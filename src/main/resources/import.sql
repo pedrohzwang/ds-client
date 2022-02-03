@@ -1,0 +1,18 @@
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Pedro da Silva', '02930696720', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 0);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Maria Cardume', '02120909623', 5000.00, TIMESTAMP WITH TIME ZONE '1982-02-15T10:50:07.12345Z', 1);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Marco Jandir', '90940580902', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 3);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Pedro da Silva', '02930696720', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 3);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Pedro da Silva', '02930696720', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 3);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Pedro da Silva', '02930696720', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 3);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Pedro da Silva', '02930696720', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 3);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Pedro da Silva', '02930696720', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 3);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Pedro da Silva', '02930696720', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 3);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Pedro da Silva', '02930696720', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 3);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Pedro da Silva', '02930696720', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 3);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Pedro da Silva', '02930696720', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 3);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Pedro da Silva', '02930696720', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 3);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Pedro da Silva', '02930696720', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 3);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Pedro da Silva', '02930696720', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 3);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Pedro da Silva', '02930696720', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 3);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Pedro da Silva', '02930696720', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 3);
+INSERT INTO clients (name, cpf, income, birth_date, children) VALUES ('Pedro da Silva', '02930696720', 2000.50, TIMESTAMP WITH TIME ZONE '2000-07-13T20:50:07.12345Z', 3);
