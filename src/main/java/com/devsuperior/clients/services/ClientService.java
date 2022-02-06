@@ -30,4 +30,15 @@ public class ClientService {
         Client client = obg.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
         return new ClientDTO(client);
     }
+
+    @Transactional
+    public ClientDTO saveClient(ClientDTO dto) {
+        Client client = new Client();
+        client.setName(dto.getName());
+        client.setBirthDate(dto.getBirthDate());
+        client.setChildren(dto.getChildren());
+        client.setCpf(dto.getCpf());
+        client.setIncome(dto.getIncome());
+        return new ClientDTO(repository.save(client));
+    }
 }
