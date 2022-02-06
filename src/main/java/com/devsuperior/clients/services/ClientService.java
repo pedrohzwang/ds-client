@@ -10,6 +10,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.Optional;
 
 @Service
@@ -26,19 +27,34 @@ public class ClientService {
 
     @Transactional(readOnly = true)
     public ClientDTO findById(Long id) {
-        Optional<Client> obg = repository.findById(id);
-        Client client = obg.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
+        Optional<Client> obj = repository.findById(id);
+        Client client = obj.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
         return new ClientDTO(client);
     }
 
     @Transactional
     public ClientDTO saveClient(ClientDTO dto) {
         Client client = new Client();
+        copyDtoToEntity(dto, client);
+        return new ClientDTO(repository.save(client));
+    }
+
+    @Transactional
+    public ClientDTO updateClient(Long id, ClientDTO dto) {
+        try {
+            Client client = repository.getOne(id);
+            copyDtoToEntity(dto, client);
+            return new ClientDTO(repository.save(client));
+        } catch (EntityNotFoundException  e) {
+            throw new ResourceNotFoundException("Entity not found");
+        }
+    }
+
+    private void copyDtoToEntity(ClientDTO dto, Client client) {
         client.setName(dto.getName());
         client.setBirthDate(dto.getBirthDate());
         client.setChildren(dto.getChildren());
         client.setCpf(dto.getCpf());
         client.setIncome(dto.getIncome());
-        return new ClientDTO(repository.save(client));
     }
 }
